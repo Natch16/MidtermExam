@@ -11,6 +11,12 @@ body {
     background: #111;
     color: #fff;
   }
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
 
   /* Navbar Styling */
 .navbar {
@@ -40,7 +46,7 @@ body {
 .nav-links a {
     color: #ccc;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     position: relative; /* For positioning the underline */
     transition: color 0.3s ease, transform 0.3s ease;
@@ -256,6 +262,23 @@ body {
   }
   
   @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+       
+      }
+
+      .hamburger:hover{
+        color: #00c853; /* Change color on hover */
+        transform: translateY(-3px); /* Slight upward movement on hover */
+      }
+      .nav-links.show {
+       display: block;
+      }
+
+      .navbar {
+        justify-content: space-between;
+      }
+
     .hero-text h1 {
       font-size: 28px;
     }
@@ -278,9 +301,9 @@ body {
       display: none; /* To make it more mobile-friendly, you can implement a hamburger menu later */
     }
   
-    .navbar {
-      justify-content: center;
-    }
+
+
+    
   }
   
   /* About Section */
@@ -428,6 +451,8 @@ body {
 
 /* Mobile-first responsive adjustments */
 @media (max-width: 768px) {
+
+    
     .about-header h1 {
         font-size: 36px; /* Smaller font size on mobile */
     }

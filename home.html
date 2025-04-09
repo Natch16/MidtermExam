@@ -6,18 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">JhonWyn.dev</div>
-    <ul class="nav-links">
-      <li><a href="home.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="service.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="project.html">Projects</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar">
+  <div class="logo">JhonWyn.dev</div>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="home.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="project.html">Projects</a></li>
+  </ul>
+</nav>
 
   <!-- Hero -->
   <section class="hero">
@@ -62,9 +63,22 @@
     <div class="design-pitch">
       <h2>I Can Build Anything You Want</h2>
       <p>I love working on web apps, landing pages, e-commerce, and CMS-based systems. Let’s turn your ideas into powerful digital products.</p>
-      <a href="#contact" class="btn">Hire Me</a>
+      <a href="contact.html" class="btn">Hire Me</a>
     </div>
   </section>
 
-</body>
+      <!-- Footer -->
+      <footer class="about-footer">
+        <p>© 2025 Jhon Wyn Verial | All Rights Reserved</p>
+      </footer>
+
+  <!-- Responsive Nav Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
+  </body>
 </html>

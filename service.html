@@ -6,17 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <br><br>
     <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">JhonWyn.dev</div>
-    <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="service.html" class="active">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="project.html">Projects</a></li>
-    </ul>
-  </nav>
+ <nav class="navbar">
+  <div class="logo">JhonWyn.dev</div>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html" class="active">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="project.html">Projects</a></li>
+  </ul>
+</nav>
 
       <header class="services-header">
         <h1>My Services</h1>
@@ -75,8 +77,14 @@
     <p>© 2025 Jhon Wyn Verial | All Rights Reserved</p>
   </footer>
 
-    </body>
-    </html>
+   <!-- Responsive Nav Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+
     
 </body>
 </html>
